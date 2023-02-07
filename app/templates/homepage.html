@@ -1,0 +1,11 @@
+{% extends "layout/main.html" %}
+
+{% block body %}
+<ol class="post-list">
+  {% for post in posts %}
+  <li>
+    <a href="{{post.post_url}}">{{post.title}}</a>
+  </li>
+  {% endfor %}
+</ol>
+{% endblock %}
