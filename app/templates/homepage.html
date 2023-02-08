@@ -1,0 +1,12 @@
+{% extends "layout/main.html" %}
+
+{% block body %}
+<ol class="post-list">
+  {% for post in posts %}
+  <li>
+    {% include "partials/post-info.html" %}
+    <a href="{{post.post_url}}">{{post.title}}</a>
+  </li>
+  {% endfor %}
+</ol>
+{% endblock %}
