@@ -1,2 +1,2 @@
 # python-newsfeed
-new things learned.
+new things learned
